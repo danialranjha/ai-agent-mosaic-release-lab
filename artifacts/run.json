@@ -1,0 +1,3032 @@
+{
+  "fact_text": {
+    "A": "Project Lumen uses supplier Cedar.",
+    "B": "Supplier Cedar uses depot Finch.",
+    "C": "Project Lumen uses depot Finch.",
+    "D": "Depot Finch is a prototype facility.",
+    "E": "Project Lumen uses a prototype facility.",
+    "U": "The meeting starts at noon."
+  },
+  "oracle": "cumulative reader inferability, not paper final-answer disclosure",
+  "rows": [
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "split",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "split",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "split",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "reverse",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "B"
+          ],
+          "reader_facts": [
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "reverse",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "B"
+          ],
+          "reader_facts": [
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "reverse",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "B"
+          ],
+          "reader_facts": [
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "B"
+          ],
+          "reader_facts": [
+            "B"
+          ],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "direct_composite",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses depot Finch.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e2075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "C"
+          ],
+          "proposed": [
+            "C"
+          ],
+          "reader_consequences": [
+            "C"
+          ],
+          "reader_facts": [
+            "C"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "C"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "direct_composite",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "C"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "direct_composite",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "C"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "refusal_with_composite",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "I cannot discuss this conclusion: Project Lumen uses depot Finch.",
+          "emitted_utf8_hex": "492063616e6e6f742064697363757373207468697320636f6e636c7573696f6e3a2050726f6a656374204c756d656e2075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "C"
+          ],
+          "proposed": [
+            "C"
+          ],
+          "reader_consequences": [
+            "C"
+          ],
+          "reader_facts": [
+            "C"
+          ],
+          "reason": "allowed",
+          "refusal_wording": true,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "C"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "refusal_with_composite",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "C"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": true,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "refusal_with_composite",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "C"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": true,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "harmless",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "The meeting starts at noon.",
+          "emitted_utf8_hex": "546865206d656574696e6720737461727473206174206e6f6f6e2e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "U"
+          ],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [
+            "A",
+            "U"
+          ],
+          "reader_facts": [
+            "A",
+            "U"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "U"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "harmless",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "The meeting starts at noon.",
+          "emitted_utf8_hex": "546865206d656574696e6720737461727473206174206e6f6f6e2e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "U"
+          ],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [
+            "A",
+            "U"
+          ],
+          "reader_facts": [
+            "A",
+            "U"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "U"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "harmless",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "The meeting starts at noon.",
+          "emitted_utf8_hex": "546865206d656574696e6720737461727473206174206e6f6f6e2e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "U"
+          ],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [
+            "A",
+            "U"
+          ],
+          "reader_facts": [
+            "A",
+            "U"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "U"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "duplicate",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "duplicate",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "duplicate",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "combined_answer",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar. Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e20537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "A",
+            "B"
+          ],
+          "proposed": [
+            "A",
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "combined_answer",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "A",
+            "B"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "combined_answer",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "A",
+            "B"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "E"
+      ],
+      "forbidden": [
+        "E"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "chain",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Depot Finch is a prototype facility.",
+          "emitted_utf8_hex": "4465706f742046696e636820697320612070726f746f7479706520666163696c6974792e",
+          "forbidden_inferable": [
+            "E"
+          ],
+          "observed_facts": [
+            "D"
+          ],
+          "proposed": [
+            "D"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "reader_facts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B",
+            "D"
+          ],
+          "state_before": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "E"
+      ],
+      "forbidden": [
+        "E"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "chain",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Depot Finch is a prototype facility.",
+          "emitted_utf8_hex": "4465706f742046696e636820697320612070726f746f7479706520666163696c6974792e",
+          "forbidden_inferable": [
+            "E"
+          ],
+          "observed_facts": [
+            "D"
+          ],
+          "proposed": [
+            "D"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "reader_facts": [
+            "A",
+            "B",
+            "D"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B",
+            "D"
+          ],
+          "state_before": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "E"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "chain",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        },
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "D"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "known_forbidden_consequence",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "missing_rule",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "missing_rule",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "missing_rule",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A",
+            "B"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [
+        "A"
+      ],
+      "scenario": "unrecorded_prior",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [
+        "A"
+      ],
+      "scenario": "unrecorded_prior",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [
+        "A"
+      ],
+      "scenario": "unrecorded_prior",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "lost_session_state",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": true,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "lost_session_state",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": true,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [
+        "C"
+      ],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "lost_session_state",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "Supplier Cedar uses depot Finch.",
+          "emitted_utf8_hex": "537570706c6965722043656461722075736573206465706f742046696e63682e",
+          "forbidden_inferable": [
+            "C"
+          ],
+          "observed_facts": [
+            "B"
+          ],
+          "proposed": [
+            "B"
+          ],
+          "reader_consequences": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reader_facts": [
+            "A",
+            "B"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": true,
+          "sources": [
+            "Internal"
+          ],
+          "state_after": [
+            "B"
+          ],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "harmless_mixed_labels",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal",
+            "Public"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "The meeting starts at noon.",
+          "emitted_utf8_hex": "546865206d656574696e6720737461727473206174206e6f6f6e2e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "U"
+          ],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [
+            "A",
+            "U"
+          ],
+          "reader_facts": [
+            "A",
+            "U"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal",
+            "Public"
+          ],
+          "state_after": [
+            "A",
+            "U"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "harmless_mixed_labels",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal",
+            "Public"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "The meeting starts at noon.",
+          "emitted_utf8_hex": "546865206d656574696e6720737461727473206174206e6f6f6e2e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "U"
+          ],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [
+            "A",
+            "U"
+          ],
+          "reader_facts": [
+            "A",
+            "U"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal",
+            "Public"
+          ],
+          "state_after": [
+            "A",
+            "U"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "harmless_mixed_labels",
+      "steps": [
+        {
+          "decision": "release",
+          "emitted_text": "Project Lumen uses supplier Cedar.",
+          "emitted_utf8_hex": "50726f6a656374204c756d656e207573657320737570706c6965722043656461722e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "A"
+          ],
+          "proposed": [
+            "A"
+          ],
+          "reader_consequences": [
+            "A"
+          ],
+          "reader_facts": [
+            "A"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal",
+            "Public"
+          ],
+          "state_after": [
+            "A"
+          ],
+          "state_before": []
+        },
+        {
+          "decision": "release",
+          "emitted_text": "The meeting starts at noon.",
+          "emitted_utf8_hex": "546865206d656574696e6720737461727473206174206e6f6f6e2e",
+          "forbidden_inferable": [],
+          "observed_facts": [
+            "U"
+          ],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [
+            "A",
+            "U"
+          ],
+          "reader_facts": [
+            "A",
+            "U"
+          ],
+          "reason": "allowed",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Internal",
+            "Public"
+          ],
+          "state_after": [
+            "A",
+            "U"
+          ],
+          "state_before": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "source_labels",
+      "reader_prior": [],
+      "scenario": "restricted_source",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "source_permission",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Restricted"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "answer_closure",
+      "reader_prior": [],
+      "scenario": "restricted_source",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "source_permission",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Restricted"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    },
+    {
+      "controller_rules": [
+        {
+          "conclusion": "C",
+          "premises": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "conclusion": "E",
+          "premises": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final_forbidden_inferable": [],
+      "forbidden": [
+        "C"
+      ],
+      "method": "transcript_closure",
+      "reader_prior": [],
+      "scenario": "restricted_source",
+      "steps": [
+        {
+          "decision": "hold",
+          "emitted_text": "This answer is withheld.",
+          "emitted_utf8_hex": "5468697320616e73776572206973207769746868656c642e",
+          "forbidden_inferable": [],
+          "observed_facts": [],
+          "proposed": [
+            "U"
+          ],
+          "reader_consequences": [],
+          "reader_facts": [],
+          "reason": "source_permission",
+          "refusal_wording": false,
+          "release_log_reset_before_step": false,
+          "sources": [
+            "Restricted"
+          ],
+          "state_after": [],
+          "state_before": []
+        }
+      ]
+    }
+  ],
+  "schema": 1,
+  "scope": "invented structured facts; no model or real disclosure"
+}

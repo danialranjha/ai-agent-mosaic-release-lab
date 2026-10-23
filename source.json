@@ -1,0 +1,10 @@
+{
+  "source": "https://arxiv.org/html/2610.30418v1",
+  "title": "Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems",
+  "sections": ["1", "3.1", "4"],
+  "relationship": "Motivation only. Original independent finite rule model, invented names and facts. No paper code, dataset or model outputs copied.",
+  "source_claim": "Individually permitted same-classification sources can imply a designated higher-classification composite.",
+  "endpoint_difference": "Paper requires final answer clearly conveying the composite; constituent co-reporting is insufficient. This lab instead tests cumulative inferability from emitted structured facts.",
+  "not_reproduced": ["LLM behavior", "author disclosure percentages", "prompt safeguards", "live agent harnesses"],
+  "proposed_extension": "Check explicit known consequences of cumulative releases before releasing the next structured answer."
+}

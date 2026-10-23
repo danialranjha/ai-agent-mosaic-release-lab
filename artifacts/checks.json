@@ -1,0 +1,27 @@
+{
+  "baseline": {
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "skipped": 0,
+    "tests": 11
+  },
+  "exhaustive_schedule_method_comparisons": 120,
+  "faults": {
+    "disable_rules": {
+      "errors": 0,
+      "failures": 19,
+      "passed": false,
+      "skipped": 0,
+      "tests": 11
+    },
+    "forget_history": {
+      "errors": 0,
+      "failures": 18,
+      "passed": false,
+      "skipped": 0,
+      "tests": 11
+    }
+  },
+  "scope": "selected finite rules and structured vocabulary; no statistical or model efficacy claim"
+}
